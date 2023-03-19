@@ -28,6 +28,15 @@ struct JailbreakDetectionView: View {
                     .foregroundColor(.blue)
                 }
                 .padding()
+
+                NavigationLink(destination: Text("待开发")){
+                    HStack {
+                        Image(systemName: "r.circle")
+                        Text("内核相关检测（待开发）")
+                    }
+                    .foregroundColor(.blue)
+                }
+                .padding()
                 
             }
             .padding()  // List

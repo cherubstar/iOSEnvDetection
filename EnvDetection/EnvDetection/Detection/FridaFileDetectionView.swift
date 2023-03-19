@@ -21,7 +21,14 @@ struct FridaFileDetectionView: View {
                     
                     // 文件路径检测
                     let detection = FridaDetection();
-                    if detection.checkFridaFileIsExists(byNSFileManager: path) {
+                    if detection.checkFileIsExists(byNSFileManager: path) ||
+                        detection.checkFileIsExists(byAccess: path)     ||
+                        detection.checkFileIsExists(byStat: path)       ||
+                        detection.checkFileIsExists(byLstat: path)      ||
+                        detection.checkFileIsExists(byStatfs: path)     ||
+                        detection.checkFileIsExists(byOpen: path)       ||
+                        detection.checkFileIsExists(byFopen: path)
+                    {
                         Text("发现")
                             .foregroundColor(.red)
                     } else {

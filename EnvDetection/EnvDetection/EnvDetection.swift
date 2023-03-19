@@ -31,6 +31,11 @@ struct EnvDetection: View {
                     Image(systemName: "hammer").imageScale(.large)
                     Text("调试检测")
             }.tag(4)
+            OtherDetectionView()
+                .tabItem {
+                    Image(systemName: "bolt").imageScale(.large)
+                    Text("其他检测")
+            }.tag(5)
         }
     }
 }

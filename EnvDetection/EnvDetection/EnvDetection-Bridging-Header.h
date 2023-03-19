@@ -6,4 +6,6 @@
 #import "FridaDetection.h"
 #import "AgentDetection.h"
 #import "DebugDetection.h"
+#import "DynamicLibraryInjectionDetection.h"
+
 #import "ToastUtil.h"

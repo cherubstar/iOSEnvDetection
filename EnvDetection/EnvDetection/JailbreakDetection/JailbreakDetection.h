@@ -12,6 +12,15 @@ NS_ASSUME_NONNULL_BEGIN
 @interface JailbreakDetection : NSObject
 
 - (BOOL)checkFileIsExistsByNSFileManager:(NSString *)path;
+- (BOOL)checkFileIsExistsByAccess:(NSString *)path;
+// stat 系列
+- (BOOL)checkFileIsExistsByStat:(NSString *)path;
+- (BOOL)checkFileIsExistsByLstat:(NSString *)path;
+- (BOOL)checkFileIsExistsByStatfs:(NSString *)path;
+// open 系列
+- (BOOL)checkFileIsExistsByOpen:(NSString *)path;
+- (BOOL)checkFileIsExistsByFopen:(NSString *)path;
+//- (BOOL)checkFileIsExistsByPopen:(NSString *)path;
 
 @end
 

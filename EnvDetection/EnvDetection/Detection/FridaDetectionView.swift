@@ -48,6 +48,13 @@ struct FridaDetectionView: View {
                 }
                 .padding()
                 
+                HStack {
+                    Text(self.flush.paths[1])
+                    Spacer()
+
+                }
+                .padding()
+                 
                 // 刷新当前页面的检测
                 Button(action: {
                     self.flush.refresh()
@@ -80,6 +87,9 @@ class FridaDetectionListRefresh : ObservableObject {
     
     @Published var paths = [
         "端口检测",
+        "进程检测（待开发）",
+        "Maps记录检测（待开发）",
+        "内存特征检测（待开发）"
     ]
 
     func refresh() {
