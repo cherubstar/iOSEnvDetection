@@ -6,129 +6,71 @@
 //
 
 #import "JailbreakDetection.h"
-#include <sys/mount.h>
-#include <sys/stat.h>
+#import "FileAndFolderPathDetection.h"
+#import "AppInfo.h"
 
 @implementation JailbreakDetection
 
-// NSFileManager
-- (BOOL)checkFileIsExistsByNSFileManager:(NSString *)path {
+- (BOOL)checkPluginAppIsInstalled:(NSString *)plugin_app {
     
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    BOOL result = [fileManager fileExistsAtPath:path];
+    // 常用越狱插件 APP 名单
+    /**
+         "/private/var/containers/Bundle/Application/8F5EEA8B-F7A5-4D0E-94EA-481BE7154ABA/unc0ver.app",
+         "/private/var/binpack/Applications/loader.app",
+         "/Applications/Cydia.app",
+         "/Applications/Sileo.app",
+         "/Applications/SubstituteSettings.app",
+         "/Applications/crackerxi.app",
+         "/Applications/DumpDecrypter.app",
+         "/Applications/Flex.app"
+     */
     
-    return result;
-}
-
-// access
-- (BOOL)checkFileIsExistsByAccess:(NSString *)path {
+    NSString *path = @"/Applications/";
+    FileAndFolderPathDetection *detection = [[FileAndFolderPathDetection alloc] init];
     
-    // NSString ➡️ const char *
-    const char * c = [path UTF8String];
+    // 遍历判断 unc0ver
+    if([plugin_app isEqual:@"unc0ver"]){
+        
+        AppInfo *appInfo = [[AppInfo alloc] init];
+        NSArray *apps = [appInfo listInstalledApps];
+        
+        for (NSString *app in apps) {
+            if ([app isEqual:plugin_app]) {
+                return YES;
+            } else {
+                return NO;
+            }
+        }
+    }
     
-    // 函数执行成功返回 0，失败则返回 -1
-    if(0 == access(c, F_OK)) {
+    if ([plugin_app isEqual:@"checkra1n"]) {
+        // checkra1n 的安装路径
+        path = @"/private/var/binpack/Applications/loader.app";
+    } else if ([plugin_app isEqual:@"Substitute"]) {
+        // Substitute 的安装路径
+        path = [path stringByAppendingString:@"SubstituteSettings.app"];
+    } else if ([plugin_app isEqual:@"CrackerXI+"]) {
+        // CrackerXI+ 的安装路径
+        path = [path stringByAppendingString:@"crackerxi.app"];
+    } else {
+        // 补充 .app 后缀
+        plugin_app = [plugin_app stringByAppendingString:@".app"];
+        // 其他 APP 路径
+        path = [path stringByAppendingString:plugin_app];
+    }
+    
+    if ([detection checkPathByNSFileManager:path] ||
+        [detection checkPathByAccess:path] ||
+        [detection checkPathByStat:path] ||
+        [detection checkPathByLstat:path] ||
+        [detection checkPathByStatfs:path] ||
+        [detection checkPathByOpen:path] ||
+        [detection checkPathByFopen:path]
+        ) {
         return YES;
     }
     
     return NO;
 }
-
-// stat
-- (BOOL)checkFileIsExistsByStat:(NSString *)path {
-    
-    // NSString ➡️ const char *
-    const char * c = [path UTF8String];
-    
-    struct stat buf;
-    // 函数执行成功返回 0，失败则返回 -1
-    if(0 == stat(c, &buf)) {
-        return YES;
-    }
-    
-    return NO;
-}
-
-// lstat
-- (BOOL)checkFileIsExistsByLstat:(NSString *)path {
-    
-    // NSString ➡️ const char *
-    const char * c = [path UTF8String];
-    
-    struct stat buf;
-    // 函数执行成功返回 0，失败则返回 -1
-    if(0 == lstat(c, &buf)) {
-        return YES;
-    }
-    
-    return NO;
-}
-
-// statfs
-- (BOOL)checkFileIsExistsByStatfs:(NSString *)path {
-    
-    // NSString ➡️ const char *
-    const char * c = [path UTF8String];
-    
-    struct statfs buf;
-    // 函数执行成功返回 0，失败则返回 -1
-    if(0 == statfs(c, &buf)) {
-        return YES;
-    }
-    
-    return NO;
-}
-
-// open
-- (BOOL)checkFileIsExistsByOpen:(NSString *)path {
-    
-    // NSString ➡️ const char *
-    const char * c = [path UTF8String];
-    
-    int f;
-    // 函数执行成功返回打开的文件句柄，-1 打开失败
-    if((f = open(c, O_RDONLY)) == -1) {
-        return NO;
-    }
-    
-    close(f);
-    
-    return YES;
-}
-
-// fopen
-- (BOOL)checkFileIsExistsByFopen:(NSString *)path {
-    
-    // NSString ➡️ const char *
-    const char * c = [path UTF8String];
-    
-    FILE *f;
-    // 函数执行成功返回打开的文件句柄，NULL 打开失败
-    if((f = fopen(c, "r")) == NULL){
-        return NO;
-    }
-    
-    fclose(f);
-    
-    return YES;
-}
-
-// popen
-/*
-- (BOOL)checkFileIsExistsByPopen:(NSString *)path {
-    
-    // NSString ➡️ const char *
-    const char * c = [path UTF8String];
-    
-    FILE *f;
-    if((f = popen(c, "r")) == NULL){
-        return NO;
-    }
-    
-    pclose(f);
-    
-    return YES;
-}
- */
 
 @end

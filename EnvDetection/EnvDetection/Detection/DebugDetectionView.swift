@@ -157,6 +157,9 @@ struct DebugDetectionView: View {
                 }
             }
             .padding()
+//            .background(Color.white.opacity(0.9))
+//            .cornerRadius(10)
+//            .shadow(radius: 5, x: 1, y: 1)
             
             /**
                 非常规反调试函数
@@ -185,6 +188,9 @@ struct DebugDetectionView: View {
                 }
             }
             .padding()
+//            .background(Color.white.opacity(0.9))
+//            .cornerRadius(10)
+//            .shadow(radius: 5, x: 1, y: 1)
         }
         .padding()      // List
     }

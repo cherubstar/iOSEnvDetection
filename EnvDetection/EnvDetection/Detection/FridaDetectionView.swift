@@ -38,7 +38,8 @@ struct FridaDetectionView: View {
                     Spacer()
 
                     // 端口检测
-                    if checkListeningPort() == 0 {
+                    let detection = FridaDetection()
+                    if detection.checkListeningPort27042() {
                         Text("发现")
                             .foregroundColor(.red)
                     } else {
@@ -48,12 +49,6 @@ struct FridaDetectionView: View {
                 }
                 .padding()
                 
-                HStack {
-                    Text(self.flush.paths[1])
-                    Spacer()
-
-                }
-                .padding()
                  
                 // 刷新当前页面的检测
                 Button(action: {
@@ -72,7 +67,7 @@ struct FridaDetectionView: View {
             }
             .padding()  // List
             .navigationBarHidden(true)
-        }
+        }   // NavigationView
     }
 }
 
@@ -88,7 +83,6 @@ class FridaDetectionListRefresh : ObservableObject {
     @Published var paths = [
         "端口检测",
         "进程检测（待开发）",
-        "Maps记录检测（待开发）",
         "内存特征检测（待开发）"
     ]
 

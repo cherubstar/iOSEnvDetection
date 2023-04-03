@@ -28,6 +28,15 @@ struct JailbreakDetectionView: View {
                     .foregroundColor(.blue)
                 }
                 .padding()
+                
+                NavigationLink(destination: PluginApplicationDetectionView()){
+                    HStack {
+                        Image(systemName: "plus.rectangle.on.folder")
+                        Text("插件 APP 检测")
+                    }
+                    .foregroundColor(.blue)
+                }
+                .padding()
 
                 NavigationLink(destination: Text("待开发")){
                     HStack {
@@ -41,8 +50,7 @@ struct JailbreakDetectionView: View {
             }
             .padding()  // List
             .navigationBarHidden(true)
-            
-        }   //NavigationView
+        }   // NavigationView
     }
 }
 

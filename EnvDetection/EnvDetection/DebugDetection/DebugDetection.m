@@ -5,13 +5,11 @@
 //  Created by 小七 on 2023/3/2.
 //
 
-#import <dlfcn.h>
-#import <string.h>
-#import <unistd.h>
-#import <sys/syscall.h>
-#import <sys/sysctl.h>
 #import "DebugDetection.h"
 #import "ptrace.h"
+#include <sys/syscall.h>
+#include <sys/sysctl.h>
+#include <dlfcn.h>
 
 @implementation DebugDetection
 
@@ -218,7 +216,5 @@ int xor_sysctl() {
     */
     return ((info.kp_proc.p_flag & P_TRACED) != 0);
 }
-
-
 
 @end

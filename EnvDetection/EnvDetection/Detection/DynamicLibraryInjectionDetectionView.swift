@@ -44,4 +44,8 @@ class DynamicLibraryInjectionDetectionListRefresh : ObservableObject {
     // 检测所有非法注入的动态库
     @Published var dyld_array = DynamicLibraryInjectionDetection.checkAllDylibIsInject() as! Array<String>
 
+    func refresh() {
+        dyld_array.append("1")
+        dyld_array.removeLast()
+    }
 }

@@ -11,7 +11,7 @@
 @implementation DynamicLibraryInjectionDetection
 
 // 检测所有非法注入的动态库
-+ (NSMutableArray *)checkAllDylibIsInject {
++ (NSArray *)checkAllDylibIsInject {
     
     if(TARGET_IPHONE_SIMULATOR)
         return nil;
@@ -37,7 +37,15 @@
             // 从路径中获得完整的文件名
             NSString *file_name = [result lastPathComponent];
             [dyld_array addObject:file_name];
+            // 获取文件名（不带后缀）
+            // NSString *file_name_no_suffix = [file_name stringByDeletingPathExtension];
         }
+        
+        // 非越狱设备动态库
+//        else if([result containsString:@"/var/containers/Bundle/Application"])  {
+//            // 这边还需要过滤掉自己项目中本身有的动态库
+//            return [result lastPathComponent];
+//        }
     }
     
     return dyld_array;

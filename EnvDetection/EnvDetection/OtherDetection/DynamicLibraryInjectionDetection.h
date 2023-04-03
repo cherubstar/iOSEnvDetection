@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DynamicLibraryInjectionDetection : NSObject
 
-+ (NSMutableArray *)checkAllDylibIsInject;
++ (NSArray *)checkAllDylibIsInject;
 
 @end
 

@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AgentDetection : NSObject
 
+- (BOOL)checkAgentAppIsInstalled:(NSString *)agent_app;
 - (BOOL)checkProxyStatusByCFNetworkCopySystemProxySettings;
 
 @end

@@ -3,6 +3,8 @@
 //
 
 #import "JailbreakDetection.h"
+#import "FileAndFolderPathDetection.h"
+#import "OpenSSHDetection.h"
 #import "FridaDetection.h"
 #import "AgentDetection.h"
 #import "DebugDetection.h"

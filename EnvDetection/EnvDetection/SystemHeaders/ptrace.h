@@ -1,12 +1,19 @@
-#ifndef _SYS_PTRACE_H_
-#define _SYS_PTRACE_H_
+//
+//  ptrace.h
+//  EnvDetection
+//
+//  Created by 小七 on 2023/4/3.
+//
+
+#ifndef ptrace_h
+#define ptrace_h
 
 #include <sys/appleapiopts.h>
 #include <sys/cdefs.h>
 #include <sys/types.h>
 
 enum {
-	ePtAttachDeprecated __deprecated_enum_msg("PT_ATTACH is deprecated. See PT_ATTACHEXC") = 10
+    ePtAttachDeprecated __deprecated_enum_msg("PT_ATTACH is deprecated. See PT_ATTACHEXC") = 10
 };
 
 
@@ -39,4 +46,4 @@ int     ptrace(int _request, pid_t _pid, caddr_t _addr, int _data);
 
 __END_DECLS
 
-#endif  /* !_SYS_PTRACE_H_ */
+#endif /* ptrace_h */

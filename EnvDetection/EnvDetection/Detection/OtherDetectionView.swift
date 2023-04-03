@@ -22,14 +22,22 @@ struct OtherDetectionView: View {
                 NavigationLink(destination: DynamicLibraryInjectionDetectionView()){
                     HStack{
                         HStack {
-                            Image(systemName: "link")
+                            Image(systemName: "repeat")
                             Text("动态库注入检测")
                         }
                         .foregroundColor(.blue)
                     }
                 }
                 .padding()
-
+                
+                NavigationLink(destination: OpenSSHDetectionView()){
+                    HStack {
+                        Image(systemName: "key.icloud")
+                        Text("OpenSSH 服务检测")
+                    }
+                    .foregroundColor(.blue)
+                }
+                .padding()
 
                 NavigationLink(destination: Text("待开发")){
                     HStack{
@@ -56,7 +64,7 @@ struct OtherDetectionView: View {
             }
             .padding()  // List
             .navigationBarHidden(true)
-        }
+        }   // NavigationView
     }
 }
 

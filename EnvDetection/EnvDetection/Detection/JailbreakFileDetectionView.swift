@@ -21,14 +21,14 @@ struct JailbreakFileDetectionView: View {
                     Spacer()
                     
                     // 文件路径检测
-                    let detection = JailbreakDetection();
-                    if detection.checkFileIsExists(byNSFileManager: path) ||
-                        detection.checkFileIsExists(byAccess: path)     ||
-                        detection.checkFileIsExists(byStat: path)       ||
-                        detection.checkFileIsExists(byLstat: path)      ||
-                        detection.checkFileIsExists(byStatfs: path)     ||
-                        detection.checkFileIsExists(byOpen: path)       ||
-                        detection.checkFileIsExists(byFopen: path)
+                    let detection = FileAndFolderPathDetection()
+                    if detection.checkPath(byNSFileManager: path) ||
+                        detection.checkPath(byAccess: path)     ||
+                        detection.checkPath(byStat: path)       ||
+                        detection.checkPath(byLstat: path)      ||
+                        detection.checkPath(byStatfs: path)     ||
+                        detection.checkPath(byOpen: path)       ||
+                        detection.checkPath(byFopen: path)
                     {
                         Text("发现")
                             .foregroundColor(.red)
