@@ -2,7 +2,7 @@
 //  AgentDetection.h
 //  EnvDetection
 //
-//  Created by 小七 on 2023/3/2.
+//  Created by 小七 on 2023/5/4.
 //
 
 #import <Foundation/Foundation.h>
@@ -11,8 +11,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AgentDetection : NSObject
 
-- (BOOL)checkAgentAppIsInstalled:(NSString *)agent_app;
+- (NSArray *)checkAgentAppIsInstalled;
 - (BOOL)checkProxyStatusByCFNetworkCopySystemProxySettings;
+- (NSDictionary *)getCFNetworkCopySystemProxySettingsDetails;
+- (void)setConnectionProxyDictionary;
 
 @end
 

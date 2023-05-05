@@ -2,7 +2,7 @@
 //  JailbreakDetection.m
 //  EnvDetection
 //
-//  Created by 小七 on 2023/3/2.
+//  Created by 小七 on 2023/5/4.
 //
 
 #import "JailbreakDetection.h"
@@ -31,16 +31,17 @@
     // 遍历判断 unc0ver
     if([plugin_app isEqual:@"unc0ver"]){
         
+        // 列出当前手机上所有非 iOS 系统的 APP，并且在 /private/var/containers/Bundle/Application 这个目录下的
         AppInfo *appInfo = [[AppInfo alloc] init];
         NSArray *apps = [appInfo listInstalledApps];
         
-        for (NSString *app in apps) {
-            if ([app isEqual:plugin_app]) {
-                return YES;
-            } else {
-                return NO;
-            }
+        // 补全 .app 后缀
+        plugin_app = @"unc0ver.app";
+        if ([apps containsObject:plugin_app]) {
+            return YES;
         }
+        
+        return NO;
     }
     
     if ([plugin_app isEqual:@"checkra1n"]) {
@@ -53,7 +54,7 @@
         // CrackerXI+ 的安装路径
         path = [path stringByAppendingString:@"crackerxi.app"];
     } else {
-        // 补充 .app 后缀
+        // 补全 .app 后缀
         plugin_app = [plugin_app stringByAppendingString:@".app"];
         // 其他 APP 路径
         path = [path stringByAppendingString:plugin_app];

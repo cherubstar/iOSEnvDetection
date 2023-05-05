@@ -2,7 +2,7 @@
 //  DebugDetection.m
 //  EnvDetection
 //
-//  Created by 小七 on 2023/3/2.
+//  Created by 小七 on 2023/5/4.
 //
 
 #import "DebugDetection.h"
@@ -18,12 +18,11 @@
     ptrace + svc
     ptrace + xor
  */
-int ori_ptrace() {
+- (void)ori_ptrace {
     ptrace(PT_DENY_ATTACH, 0, 0, 0);
-    return 1;
 }
 
-int svc_ptrace() {
+- (void)svc_ptrace {
 #ifdef __arm64__
     __asm__("mov X0, #31\n"
             "mov X1, #0\n"
@@ -32,10 +31,9 @@ int svc_ptrace() {
             "mov w16, #26\n"
             "svc #0x80");
 #endif
-    return 1;
 }
 
-int xor_ptrace() {
+- (void)xor_ptrace {
     
     //A 异或 B 等到 C,C 再异或 A 得到 B,隐藏 ptrace
     unsigned char str[] = {
@@ -57,8 +55,6 @@ int xor_ptrace() {
     ptrace_ptr = dlsym(handle, (const char *)str);      // 动态查找 ptrace 符号
     ptrace_ptr(PT_DENY_ATTACH, 0, 0, 0);
     dlclose(handle);
-    
-    return 1;
 }
 
 /**
@@ -66,12 +62,11 @@ int xor_ptrace() {
     syscall + ptrace + svc
     syscall + ptrace + xor
  */
-int ori_syscall() {
+- (void)ori_syscall {
     syscall(SYS_ptrace, PT_DENY_ATTACH, 0, 0, 0);
-    return 1;
 }
 
-int svc_syscall() {
+- (void)svc_syscall {
 #ifdef __arm64__
     __asm__("mov X0, #26\n"
             "mov X1, #31\n"
@@ -81,10 +76,9 @@ int svc_syscall() {
             "mov w16, #0\n"
             "svc #0x80");
 #endif
-    return 1;
 }
 
-int xor_syscall() {
+- (void)xor_syscall {
     
     //A 异或 B 等到 C,C 再异或 A 得到 B,隐藏 syscall
     unsigned char str[] = {
@@ -107,8 +101,6 @@ int xor_syscall() {
     syscall_ptr = dlsym(handle, (const char *)str);     // 动态查找 syscall 符号
     syscall_ptr(SYS_ptrace, PT_DENY_ATTACH, 0, 0, 0);
     dlclose(handle);
-    
-    return 1;
 }
 
 /**
@@ -116,7 +108,7 @@ int xor_syscall() {
     sysctl  + svc
     sysctl  + xor
  */
-int ori_sysctl() {
+- (int)ori_sysctl {
     
     // 需要检测进程信息的字段数组
     int name[4];                // 里面存放字节码，查询信息
@@ -139,7 +131,7 @@ int ori_sysctl() {
     return ((info.kp_proc.p_flag & P_TRACED) != 0);
 }
 
-int svc_sysctl() {
+- (int)svc_sysctl {
     
     // 需要检测进程信息的字段数组
     int name[4];                // 里面存放字节码，查询信息
@@ -177,7 +169,7 @@ int svc_sysctl() {
     return ((proc.kp_proc.p_flag & P_TRACED) != 0);
 }
 
-int xor_sysctl() {
+- (int)xor_sysctl {
     
     int name[4];                    // 里面存放字节码，查询信息
     name[0] = CTL_KERN;             // 内核查询

@@ -2,7 +2,7 @@
 //  AppInfo.m
 //  EnvDetection
 //
-//  Created by 小七 on 2023/3/27.
+//  Created by 小七 on 2023/5/4.
 //
 
 #import "AppInfo.h"
@@ -28,6 +28,7 @@
         self.hidden = [appProxy.appTags containsObject:@"hidden"];
         self.systemApp = [info.applicationType isEqualToString:@"System"];
     }
+    
     return self;
 }
 
@@ -78,9 +79,9 @@
             NSString *app_name = [app.bundlePath lastPathComponent];
             
             // 获取文件名（不带后缀）
-            NSString *app_name_no_suffix = [app_name stringByDeletingPathExtension];
+            // NSString *app_name_no_suffix = [app_name stringByDeletingPathExtension];
 
-            [apps addObject:app_name_no_suffix];
+            [apps addObject:app_name];
             // [bundleIds addObject:app.bundleIdentifier];
         }
     }

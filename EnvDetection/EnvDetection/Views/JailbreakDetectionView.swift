@@ -2,7 +2,7 @@
 //  JailbreakDetectionView.swift
 //  EnvDetection
 //
-//  Created by 小七 on 2023/3/2.
+//  Created by 小七 on 2023/5/4.
 //
 
 import SwiftUI
@@ -12,18 +12,13 @@ struct JailbreakDetectionView: View {
     var body: some View {
         NavigationView {
             List {
-                HStack{
-                    Text("越狱检测").font(.title)
-                        .padding()
-                        .background(Color.gray.opacity(0.1))
-                        .cornerRadius(10)
-                        .shadow(radius: 5, x: 1, y: 1)
-                }
-                
-                NavigationLink(destination: JailbreakFileDetectionView()){
+                NavigationLink(destination: JailbreakFileAndFolderDetectionView()){
                     HStack {
                         Image(systemName: "doc")
+                            .imageScale(.large)
+                        
                         Text("文件/目录检测")
+                            .font(.headline)
                     }
                     .foregroundColor(.blue)
                 }
@@ -31,8 +26,10 @@ struct JailbreakDetectionView: View {
                 
                 NavigationLink(destination: PluginApplicationDetectionView()){
                     HStack {
-                        Image(systemName: "plus.rectangle.on.folder")
+                        Image(systemName: "folder")
+                            .imageScale(.large)
                         Text("插件 APP 检测")
+                            .font(.headline)
                     }
                     .foregroundColor(.blue)
                 }
@@ -41,16 +38,17 @@ struct JailbreakDetectionView: View {
                 NavigationLink(destination: Text("待开发")){
                     HStack {
                         Image(systemName: "r.circle")
+                            .imageScale(.large)
                         Text("内核相关检测（待开发）")
+                            .font(.headline)
                     }
                     .foregroundColor(.blue)
                 }
                 .padding()
-                
-            }
-            .padding()  // List
-            .navigationBarHidden(true)
-        }   // NavigationView
+            }   // List
+            .listStyle(InsetGroupedListStyle())
+            .navigationTitle("越狱检测")
+        }
     }
 }
 

@@ -2,7 +2,7 @@
 //  OtherDetectionView.swift
 //  EnvDetection
 //
-//  Created by 小七 on 2023/3/4.
+//  Created by 小七 on 2023/5/4.
 //
 
 import SwiftUI
@@ -11,19 +11,13 @@ struct OtherDetectionView: View {
     var body: some View {
         NavigationView {
             List {
-                HStack{
-                    Text("其他检测").font(.title)
-                        .padding()
-                        .background(Color.gray.opacity(0.1))
-                        .cornerRadius(10)
-                        .shadow(radius: 5, x: 1, y: 1)
-                }
-                
                 NavigationLink(destination: DynamicLibraryInjectionDetectionView()){
                     HStack{
                         HStack {
                             Image(systemName: "repeat")
+                                .imageScale(.large)
                             Text("动态库注入检测")
+                                .font(.headline)
                         }
                         .foregroundColor(.blue)
                     }
@@ -33,7 +27,9 @@ struct OtherDetectionView: View {
                 NavigationLink(destination: OpenSSHDetectionView()){
                     HStack {
                         Image(systemName: "key.icloud")
+                            .imageScale(.large)
                         Text("OpenSSH 服务检测")
+                            .font(.headline)
                     }
                     .foregroundColor(.blue)
                 }
@@ -43,7 +39,9 @@ struct OtherDetectionView: View {
                     HStack{
                         HStack {
                             Image(systemName: "questionmark.circle")
+                                .imageScale(.large)
                             Text("重签名检测（待开发）")
+                                .font(.headline)
                         }
                         .foregroundColor(.blue)
                     }
@@ -54,17 +52,18 @@ struct OtherDetectionView: View {
                     HStack{
                         HStack {
                             Image(systemName: "questionmark.circle")
+                                .imageScale(.large)
                             Text("函数 Hook 检测（待开发）")
+                                .font(.headline)
                         }
                         .foregroundColor(.blue)
                     }
                 }
                 .padding()
-                
-            }
-            .padding()  // List
-            .navigationBarHidden(true)
-        }   // NavigationView
+            }   // List
+            .listStyle(InsetGroupedListStyle())
+            .navigationTitle("其他检测")
+        }
     }
 }
 

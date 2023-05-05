@@ -2,31 +2,35 @@
 //  DynamicLibraryInjectionDetectionView.swift
 //  EnvDetection
 //
-//  Created by 小七 on 2023/3/15.
+//  Created by 小七 on 2023/5/4.
 //
 
 import SwiftUI
 
 struct DynamicLibraryInjectionDetectionView: View {
     
-    @ObservedObject var flush: DynamicLibraryInjectionDetectionListRefresh = DynamicLibraryInjectionDetectionListRefresh()
+    @StateObject var viewModel = OtherDetectionViewModel()
     
     var body: some View {
-        
         List {
+            // 检测所有非法注入的动态库
+            let dyld_array = viewModel.getDyldArray()
+            
             // 遍历非法注入的动态库
-            ForEach(self.flush.dyld_array, id: \.self) { path in
+            ForEach(dyld_array, id: \.self) { path in
                 HStack{
                     Text(path)
+                        .font(.headline)
                     Spacer()
                     
                     Text("发现")
+                        .font(.headline)
                         .foregroundColor(.red)
                 }
-                .padding([.leading, .trailing])
+                .padding(.horizontal)
             }
-        }
-        .padding()  // List
+        }   // List
+        .listStyle(InsetGroupedListStyle())
         .navigationTitle(Text("动态库注入检测"))
         .navigationBarTitleDisplayMode(.inline)
     }
@@ -35,17 +39,5 @@ struct DynamicLibraryInjectionDetectionView: View {
 struct DynamicLibraryInjectionDetectionView_Previews: PreviewProvider {
     static var previews: some View {
         DynamicLibraryInjectionDetectionView()
-    }
-}
-
-// 刷新当前界面
-class DynamicLibraryInjectionDetectionListRefresh : ObservableObject {
-    
-    // 检测所有非法注入的动态库
-    @Published var dyld_array = DynamicLibraryInjectionDetection.checkAllDylibIsInject() as! Array<String>
-
-    func refresh() {
-        dyld_array.append("1")
-        dyld_array.removeLast()
     }
 }

@@ -2,7 +2,7 @@
 //  EnvDetectionApp.swift
 //  EnvDetection
 //
-//  Created by 张成星 on 2023/4/3.
+//  Created by 小七 on 2023/5/4.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct EnvDetectionApp: App {
     var body: some Scene {
         WindowGroup {
-            EnvDetection()
+            ContentView()
         }
     }
 }

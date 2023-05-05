@@ -2,7 +2,7 @@
 //  OpenSSHDetection.m
 //  EnvDetection
 //
-//  Created by 小七 on 2023/3/24.
+//  Created by 小七 on 2023/5/4.
 //
 
 #import "OpenSSHDetection.h"
@@ -35,6 +35,7 @@
         0: 连接成功  -1: 连接失败
      */
     int result = connect(s, (struct sockaddr *)&addr, sizeof(addr));
+    
     if (result == -1) {
         NSLog(@"connect fail");
         close(s);

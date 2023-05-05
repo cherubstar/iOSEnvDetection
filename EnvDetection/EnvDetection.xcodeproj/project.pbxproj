@@ -7,79 +7,88 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE83AD7929DAA78000874CBB /* EnvDetectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83AD7829DAA78000874CBB /* EnvDetectionApp.swift */; };
-		DE83AD7B29DAA78000874CBB /* EnvDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83AD7A29DAA78000874CBB /* EnvDetection.swift */; };
-		DE83AD7D29DAA78100874CBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE83AD7C29DAA78100874CBB /* Assets.xcassets */; };
-		DE83AD8029DAA78100874CBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE83AD7F29DAA78100874CBB /* Preview Assets.xcassets */; };
-		DE83AD8729DAA7DE00874CBB /* JailbreakDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83AD8629DAA7DE00874CBB /* JailbreakDetectionView.swift */; };
-		DE83AD8929DAA7F400874CBB /* JailbreakFileDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83AD8829DAA7F400874CBB /* JailbreakFileDetectionView.swift */; };
-		DE83AD8B29DAA80800874CBB /* PluginApplicationDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83AD8A29DAA80800874CBB /* PluginApplicationDetectionView.swift */; };
-		DE83AD8D29DAA81D00874CBB /* FridaDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83AD8C29DAA81D00874CBB /* FridaDetectionView.swift */; };
-		DE83AD8F29DAA83100874CBB /* FridaFileDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83AD8E29DAA83100874CBB /* FridaFileDetectionView.swift */; };
-		DE83AD9129DAA84600874CBB /* AgentDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83AD9029DAA84600874CBB /* AgentDetectionView.swift */; };
-		DE83AD9329DAA86100874CBB /* AgentAppDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83AD9229DAA86100874CBB /* AgentAppDetectionView.swift */; };
-		DE83AD9529DAA87A00874CBB /* DebugDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83AD9429DAA87A00874CBB /* DebugDetectionView.swift */; };
-		DE83AD9729DAA89000874CBB /* OtherDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83AD9629DAA89000874CBB /* OtherDetectionView.swift */; };
-		DE83AD9929DAA8A600874CBB /* DynamicLibraryInjectionDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83AD9829DAA8A600874CBB /* DynamicLibraryInjectionDetectionView.swift */; };
-		DE83AD9B29DAA8BB00874CBB /* OpenSSHDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83AD9A29DAA8BB00874CBB /* OpenSSHDetectionView.swift */; };
-		DE83AD9D29DAA8D200874CBB /* OpenSSHFileDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83AD9C29DAA8D200874CBB /* OpenSSHFileDetectionView.swift */; };
-		DE83ADA129DAA8F400874CBB /* ToastUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DE83ADA029DAA8F400874CBB /* ToastUtil.m */; };
-		DE83ADA429DAA91D00874CBB /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DE83ADA329DAA91D00874CBB /* AppInfo.m */; };
-		DE83ADA729DAA93B00874CBB /* FileAndFolderPathDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = DE83ADA629DAA93B00874CBB /* FileAndFolderPathDetection.m */; };
-		DE83ADAC29DAA9A400874CBB /* JailbreakDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = DE83ADAB29DAA9A400874CBB /* JailbreakDetection.m */; };
-		DE83ADAF29DAA9C700874CBB /* FridaDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = DE83ADAE29DAA9C700874CBB /* FridaDetection.m */; };
-		DE83ADB229DAA9E500874CBB /* AgentDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = DE83ADB129DAA9E500874CBB /* AgentDetection.m */; };
-		DE83ADB529DAAA1600874CBB /* DebugDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = DE83ADB429DAAA1600874CBB /* DebugDetection.m */; };
-		DE83ADB829DAAA3A00874CBB /* DynamicLibraryInjectionDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = DE83ADB729DAAA3A00874CBB /* DynamicLibraryInjectionDetection.m */; };
-		DE83ADBB29DAAA5C00874CBB /* OpenSSHDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = DE83ADBA29DAAA5C00874CBB /* OpenSSHDetection.m */; };
+		DE12327C2A02BD3800F402F4 /* EnvDetectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12327B2A02BD3800F402F4 /* EnvDetectionApp.swift */; };
+		DE12327E2A02BD3800F402F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12327D2A02BD3800F402F4 /* ContentView.swift */; };
+		DE1232802A02BD3A00F402F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE12327F2A02BD3A00F402F4 /* Assets.xcassets */; };
+		DE1232832A02BD3A00F402F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE1232822A02BD3A00F402F4 /* Preview Assets.xcassets */; };
+		DE12328D2A02BFE800F402F4 /* JailbreakDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12328C2A02BFE800F402F4 /* JailbreakDetectionView.swift */; };
+		DE12328F2A02C52800F402F4 /* FridaDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12328E2A02C52800F402F4 /* FridaDetectionView.swift */; };
+		DE1232992A02C96400F402F4 /* JailbreakDetectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1232982A02C96400F402F4 /* JailbreakDetectionViewModel.swift */; };
+		DE12329B2A02C97600F402F4 /* FridaDetectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12329A2A02C97600F402F4 /* FridaDetectionViewModel.swift */; };
+		DE12329D2A02CA0100F402F4 /* AgentDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12329C2A02CA0100F402F4 /* AgentDetectionView.swift */; };
+		DE12329F2A02CA0F00F402F4 /* AgentDetectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12329E2A02CA0F00F402F4 /* AgentDetectionViewModel.swift */; };
+		DE1232A12A02CB6200F402F4 /* DebugDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1232A02A02CB6200F402F4 /* DebugDetectionView.swift */; };
+		DE1232A32A02CB6D00F402F4 /* DebugDetectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1232A22A02CB6D00F402F4 /* DebugDetectionViewModel.swift */; };
+		DE1232A52A02CB9000F402F4 /* OtherDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1232A42A02CB9000F402F4 /* OtherDetectionView.swift */; };
+		DE1232A72A02CB9A00F402F4 /* OtherDetectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1232A62A02CB9A00F402F4 /* OtherDetectionViewModel.swift */; };
+		DE1232AC2A02D11900F402F4 /* JailbreakDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1232AB2A02D11900F402F4 /* JailbreakDetection.m */; };
+		DE1232B02A02D17600F402F4 /* FileAndFolderPathDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1232AF2A02D17600F402F4 /* FileAndFolderPathDetection.m */; };
+		DE1232B32A02D20D00F402F4 /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1232B22A02D20D00F402F4 /* AppInfo.m */; };
+		DE1232BD2A02D48400F402F4 /* FridaDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1232BC2A02D48400F402F4 /* FridaDetection.m */; };
+		DE1232C12A02D4DE00F402F4 /* AgentDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1232C02A02D4DE00F402F4 /* AgentDetection.m */; };
+		DE1232C52A02D53A00F402F4 /* DebugDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1232C42A02D53A00F402F4 /* DebugDetection.m */; };
+		DE1232C92A02D57200F402F4 /* OpenSSHDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1232C82A02D57200F402F4 /* OpenSSHDetection.m */; };
+		DE1232CC2A02D58700F402F4 /* DynamicLibraryInjectionDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1232CB2A02D58700F402F4 /* DynamicLibraryInjectionDetection.m */; };
+		DE1232D02A02DB6500F402F4 /* JailbreakFileAndFolderDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1232CF2A02DB6500F402F4 /* JailbreakFileAndFolderDetectionView.swift */; };
+		DE1232D22A02E8FD00F402F4 /* FridaFileDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1232D12A02E8FD00F402F4 /* FridaFileDetectionView.swift */; };
+		DE1232D42A02EF7B00F402F4 /* AgentApplicationDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1232D32A02EF7B00F402F4 /* AgentApplicationDetectionView.swift */; };
+		DE1232D62A02F80600F402F4 /* DynamicLibraryInjectionDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1232D52A02F80600F402F4 /* DynamicLibraryInjectionDetectionView.swift */; };
+		DE1232D82A02FB5400F402F4 /* PluginApplicationDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1232D72A02FB5400F402F4 /* PluginApplicationDetectionView.swift */; };
+		DE1232DA2A02FDC900F402F4 /* OpenSSHDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1232D92A02FDC900F402F4 /* OpenSSHDetectionView.swift */; };
+		DE1232DC2A02FDD700F402F4 /* OpenSSHFileDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1232DB2A02FDD700F402F4 /* OpenSSHFileDetectionView.swift */; };
+		DE9D1C0D2A039D200066DAEB /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9D1C0C2A039D200066DAEB /* CommonUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DE83AD7529DAA78000874CBB /* EnvDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnvDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE83AD7829DAA78000874CBB /* EnvDetectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvDetectionApp.swift; sourceTree = "<group>"; };
-		DE83AD7A29DAA78000874CBB /* EnvDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvDetection.swift; sourceTree = "<group>"; };
-		DE83AD7C29DAA78100874CBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DE83AD7F29DAA78100874CBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DE83AD8629DAA7DE00874CBB /* JailbreakDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailbreakDetectionView.swift; sourceTree = "<group>"; };
-		DE83AD8829DAA7F400874CBB /* JailbreakFileDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailbreakFileDetectionView.swift; sourceTree = "<group>"; };
-		DE83AD8A29DAA80800874CBB /* PluginApplicationDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginApplicationDetectionView.swift; sourceTree = "<group>"; };
-		DE83AD8C29DAA81D00874CBB /* FridaDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridaDetectionView.swift; sourceTree = "<group>"; };
-		DE83AD8E29DAA83100874CBB /* FridaFileDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridaFileDetectionView.swift; sourceTree = "<group>"; };
-		DE83AD9029DAA84600874CBB /* AgentDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetectionView.swift; sourceTree = "<group>"; };
-		DE83AD9229DAA86100874CBB /* AgentAppDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentAppDetectionView.swift; sourceTree = "<group>"; };
-		DE83AD9429DAA87A00874CBB /* DebugDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugDetectionView.swift; sourceTree = "<group>"; };
-		DE83AD9629DAA89000874CBB /* OtherDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherDetectionView.swift; sourceTree = "<group>"; };
-		DE83AD9829DAA8A600874CBB /* DynamicLibraryInjectionDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicLibraryInjectionDetectionView.swift; sourceTree = "<group>"; };
-		DE83AD9A29DAA8BB00874CBB /* OpenSSHDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSSHDetectionView.swift; sourceTree = "<group>"; };
-		DE83AD9C29DAA8D200874CBB /* OpenSSHFileDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSSHFileDetectionView.swift; sourceTree = "<group>"; };
-		DE83AD9E29DAA8F400874CBB /* EnvDetection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EnvDetection-Bridging-Header.h"; sourceTree = "<group>"; };
-		DE83AD9F29DAA8F400874CBB /* ToastUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToastUtil.h; sourceTree = "<group>"; };
-		DE83ADA029DAA8F400874CBB /* ToastUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToastUtil.m; sourceTree = "<group>"; };
-		DE83ADA229DAA91D00874CBB /* AppInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
-		DE83ADA329DAA91D00874CBB /* AppInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
-		DE83ADA529DAA93B00874CBB /* FileAndFolderPathDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileAndFolderPathDetection.h; sourceTree = "<group>"; };
-		DE83ADA629DAA93B00874CBB /* FileAndFolderPathDetection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileAndFolderPathDetection.m; sourceTree = "<group>"; };
-		DE83ADAA29DAA9A400874CBB /* JailbreakDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JailbreakDetection.h; sourceTree = "<group>"; };
-		DE83ADAB29DAA9A400874CBB /* JailbreakDetection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JailbreakDetection.m; sourceTree = "<group>"; };
-		DE83ADAD29DAA9C700874CBB /* FridaDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FridaDetection.h; sourceTree = "<group>"; };
-		DE83ADAE29DAA9C700874CBB /* FridaDetection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FridaDetection.m; sourceTree = "<group>"; };
-		DE83ADB029DAA9E500874CBB /* AgentDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AgentDetection.h; sourceTree = "<group>"; };
-		DE83ADB129DAA9E500874CBB /* AgentDetection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AgentDetection.m; sourceTree = "<group>"; };
-		DE83ADB329DAAA1600874CBB /* DebugDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugDetection.h; sourceTree = "<group>"; };
-		DE83ADB429DAAA1600874CBB /* DebugDetection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DebugDetection.m; sourceTree = "<group>"; };
-		DE83ADB629DAAA3A00874CBB /* DynamicLibraryInjectionDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicLibraryInjectionDetection.h; sourceTree = "<group>"; };
-		DE83ADB729DAAA3A00874CBB /* DynamicLibraryInjectionDetection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicLibraryInjectionDetection.m; sourceTree = "<group>"; };
-		DE83ADB929DAAA5C00874CBB /* OpenSSHDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenSSHDetection.h; sourceTree = "<group>"; };
-		DE83ADBA29DAAA5C00874CBB /* OpenSSHDetection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenSSHDetection.m; sourceTree = "<group>"; };
-		DE83ADC129DAAB6000874CBB /* ptrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ptrace.h; sourceTree = "<group>"; };
-		DE83ADC329DAABE000874CBB /* LSApplicationWorkspace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSApplicationWorkspace.h; sourceTree = "<group>"; };
-		DE83ADC429DAABE000874CBB /* LSApplicationProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSApplicationProxy.h; sourceTree = "<group>"; };
-		DE83ADC529DAABE000874CBB /* FBApplicationInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBApplicationInfo.h; sourceTree = "<group>"; };
-		DE83ADC629DAABE000874CBB /* FBBundleInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBBundleInfo.h; sourceTree = "<group>"; };
+		DE1232782A02BD3800F402F4 /* EnvDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnvDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE12327B2A02BD3800F402F4 /* EnvDetectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvDetectionApp.swift; sourceTree = "<group>"; };
+		DE12327D2A02BD3800F402F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DE12327F2A02BD3A00F402F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE1232822A02BD3A00F402F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DE12328C2A02BFE800F402F4 /* JailbreakDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailbreakDetectionView.swift; sourceTree = "<group>"; };
+		DE12328E2A02C52800F402F4 /* FridaDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridaDetectionView.swift; sourceTree = "<group>"; };
+		DE1232982A02C96400F402F4 /* JailbreakDetectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailbreakDetectionViewModel.swift; sourceTree = "<group>"; };
+		DE12329A2A02C97600F402F4 /* FridaDetectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridaDetectionViewModel.swift; sourceTree = "<group>"; };
+		DE12329C2A02CA0100F402F4 /* AgentDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetectionView.swift; sourceTree = "<group>"; };
+		DE12329E2A02CA0F00F402F4 /* AgentDetectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetectionViewModel.swift; sourceTree = "<group>"; };
+		DE1232A02A02CB6200F402F4 /* DebugDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugDetectionView.swift; sourceTree = "<group>"; };
+		DE1232A22A02CB6D00F402F4 /* DebugDetectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugDetectionViewModel.swift; sourceTree = "<group>"; };
+		DE1232A42A02CB9000F402F4 /* OtherDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherDetectionView.swift; sourceTree = "<group>"; };
+		DE1232A62A02CB9A00F402F4 /* OtherDetectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherDetectionViewModel.swift; sourceTree = "<group>"; };
+		DE1232A92A02D11900F402F4 /* EnvDetection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EnvDetection-Bridging-Header.h"; sourceTree = "<group>"; };
+		DE1232AA2A02D11900F402F4 /* JailbreakDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JailbreakDetection.h; sourceTree = "<group>"; };
+		DE1232AB2A02D11900F402F4 /* JailbreakDetection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JailbreakDetection.m; sourceTree = "<group>"; };
+		DE1232AE2A02D17600F402F4 /* FileAndFolderPathDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileAndFolderPathDetection.h; sourceTree = "<group>"; };
+		DE1232AF2A02D17600F402F4 /* FileAndFolderPathDetection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileAndFolderPathDetection.m; sourceTree = "<group>"; };
+		DE1232B12A02D20D00F402F4 /* AppInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
+		DE1232B22A02D20D00F402F4 /* AppInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
+		DE1232B52A02D28B00F402F4 /* LSApplicationWorkspace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSApplicationWorkspace.h; sourceTree = "<group>"; };
+		DE1232B62A02D28B00F402F4 /* FBBundleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBBundleInfo.h; sourceTree = "<group>"; };
+		DE1232B72A02D28B00F402F4 /* ptrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ptrace.h; sourceTree = "<group>"; };
+		DE1232B82A02D28B00F402F4 /* LSApplicationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSApplicationProxy.h; sourceTree = "<group>"; };
+		DE1232B92A02D28B00F402F4 /* FBApplicationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBApplicationInfo.h; sourceTree = "<group>"; };
+		DE1232BB2A02D48400F402F4 /* FridaDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FridaDetection.h; sourceTree = "<group>"; };
+		DE1232BC2A02D48400F402F4 /* FridaDetection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FridaDetection.m; sourceTree = "<group>"; };
+		DE1232BF2A02D4DE00F402F4 /* AgentDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AgentDetection.h; sourceTree = "<group>"; };
+		DE1232C02A02D4DE00F402F4 /* AgentDetection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AgentDetection.m; sourceTree = "<group>"; };
+		DE1232C32A02D53A00F402F4 /* DebugDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugDetection.h; sourceTree = "<group>"; };
+		DE1232C42A02D53A00F402F4 /* DebugDetection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DebugDetection.m; sourceTree = "<group>"; };
+		DE1232C72A02D57200F402F4 /* OpenSSHDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenSSHDetection.h; sourceTree = "<group>"; };
+		DE1232C82A02D57200F402F4 /* OpenSSHDetection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenSSHDetection.m; sourceTree = "<group>"; };
+		DE1232CA2A02D58700F402F4 /* DynamicLibraryInjectionDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicLibraryInjectionDetection.h; sourceTree = "<group>"; };
+		DE1232CB2A02D58700F402F4 /* DynamicLibraryInjectionDetection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicLibraryInjectionDetection.m; sourceTree = "<group>"; };
+		DE1232CF2A02DB6500F402F4 /* JailbreakFileAndFolderDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailbreakFileAndFolderDetectionView.swift; sourceTree = "<group>"; };
+		DE1232D12A02E8FD00F402F4 /* FridaFileDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridaFileDetectionView.swift; sourceTree = "<group>"; };
+		DE1232D32A02EF7B00F402F4 /* AgentApplicationDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentApplicationDetectionView.swift; sourceTree = "<group>"; };
+		DE1232D52A02F80600F402F4 /* DynamicLibraryInjectionDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicLibraryInjectionDetectionView.swift; sourceTree = "<group>"; };
+		DE1232D72A02FB5400F402F4 /* PluginApplicationDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginApplicationDetectionView.swift; sourceTree = "<group>"; };
+		DE1232D92A02FDC900F402F4 /* OpenSSHDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSSHDetectionView.swift; sourceTree = "<group>"; };
+		DE1232DB2A02FDD700F402F4 /* OpenSSHFileDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSSHFileDetectionView.swift; sourceTree = "<group>"; };
+		DE9D1C0C2A039D200066DAEB /* CommonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DE83AD7229DAA78000874CBB /* Frameworks */ = {
+		DE1232752A02BD3800F402F4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -89,159 +98,171 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DE83AD6C29DAA78000874CBB = {
+		DE12326F2A02BD3800F402F4 = {
 			isa = PBXGroup;
 			children = (
-				DE83AD7729DAA78000874CBB /* EnvDetection */,
-				DE83AD7629DAA78000874CBB /* Products */,
+				DE12327A2A02BD3800F402F4 /* EnvDetection */,
+				DE1232792A02BD3800F402F4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DE83AD7629DAA78000874CBB /* Products */ = {
+		DE1232792A02BD3800F402F4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE83AD7529DAA78000874CBB /* EnvDetection.app */,
+				DE1232782A02BD3800F402F4 /* EnvDetection.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DE83AD7729DAA78000874CBB /* EnvDetection */ = {
+		DE12327A2A02BD3800F402F4 /* EnvDetection */ = {
 			isa = PBXGroup;
 			children = (
-				DE83AD7829DAA78000874CBB /* EnvDetectionApp.swift */,
-				DE83AD7A29DAA78000874CBB /* EnvDetection.swift */,
-				DE83ADA929DAA97B00874CBB /* ToastUtil */,
-				DE83ADA829DAA96000874CBB /* CommonUtil */,
-				DE83ADC229DAAB9E00874CBB /* SystemHeaders */,
-				DE83ADBC29DAAA9200874CBB /* JailbreakDetection */,
-				DE83ADBD29DAAA9B00874CBB /* FridaDetection */,
-				DE83ADBE29DAAAA400874CBB /* AgentDetection */,
-				DE83ADBF29DAAAB300874CBB /* DebugDetection */,
-				DE83ADC029DAAAC100874CBB /* OtherDetection */,
-				DE83ADC729DAACCC00874CBB /* Detection */,
-				DE83AD7C29DAA78100874CBB /* Assets.xcassets */,
-				DE83AD7E29DAA78100874CBB /* Preview Content */,
-				DE83AD9E29DAA8F400874CBB /* EnvDetection-Bridging-Header.h */,
+				DE12327B2A02BD3800F402F4 /* EnvDetectionApp.swift */,
+				DE12327D2A02BD3800F402F4 /* ContentView.swift */,
+				DE1232AD2A02D15C00F402F4 /* CommonUtil */,
+				DE1232B42A02D25400F402F4 /* SystemHeaders */,
+				DE1232A82A02D0FE00F402F4 /* JailbreakDetection */,
+				DE1232BA2A02D46D00F402F4 /* FridaDetection */,
+				DE1232BE2A02D4CF00F402F4 /* AgentDetection */,
+				DE1232C22A02D53000F402F4 /* DebugDetection */,
+				DE1232C62A02D55500F402F4 /* OtherDetection */,
+				DE12328A2A02BEDD00F402F4 /* Models */,
+				DE1232892A02BED400F402F4 /* Views */,
+				DE12328B2A02BEE400F402F4 /* ViewModels */,
+				DE12327F2A02BD3A00F402F4 /* Assets.xcassets */,
+				DE1232812A02BD3A00F402F4 /* Preview Content */,
+				DE1232A92A02D11900F402F4 /* EnvDetection-Bridging-Header.h */,
 			);
 			path = EnvDetection;
 			sourceTree = "<group>";
 		};
-		DE83AD7E29DAA78100874CBB /* Preview Content */ = {
+		DE1232812A02BD3A00F402F4 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				DE83AD7F29DAA78100874CBB /* Preview Assets.xcassets */,
+				DE1232822A02BD3A00F402F4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		DE83ADA829DAA96000874CBB /* CommonUtil */ = {
+		DE1232892A02BED400F402F4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DE83ADA229DAA91D00874CBB /* AppInfo.h */,
-				DE83ADA329DAA91D00874CBB /* AppInfo.m */,
-				DE83ADA529DAA93B00874CBB /* FileAndFolderPathDetection.h */,
-				DE83ADA629DAA93B00874CBB /* FileAndFolderPathDetection.m */,
+				DE12328C2A02BFE800F402F4 /* JailbreakDetectionView.swift */,
+				DE1232CF2A02DB6500F402F4 /* JailbreakFileAndFolderDetectionView.swift */,
+				DE1232D72A02FB5400F402F4 /* PluginApplicationDetectionView.swift */,
+				DE12328E2A02C52800F402F4 /* FridaDetectionView.swift */,
+				DE1232D12A02E8FD00F402F4 /* FridaFileDetectionView.swift */,
+				DE12329C2A02CA0100F402F4 /* AgentDetectionView.swift */,
+				DE1232D32A02EF7B00F402F4 /* AgentApplicationDetectionView.swift */,
+				DE1232A02A02CB6200F402F4 /* DebugDetectionView.swift */,
+				DE1232A42A02CB9000F402F4 /* OtherDetectionView.swift */,
+				DE1232D52A02F80600F402F4 /* DynamicLibraryInjectionDetectionView.swift */,
+				DE1232D92A02FDC900F402F4 /* OpenSSHDetectionView.swift */,
+				DE1232DB2A02FDD700F402F4 /* OpenSSHFileDetectionView.swift */,
 			);
-			path = CommonUtil;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		DE83ADA929DAA97B00874CBB /* ToastUtil */ = {
+		DE12328A2A02BEDD00F402F4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DE83AD9F29DAA8F400874CBB /* ToastUtil.h */,
-				DE83ADA029DAA8F400874CBB /* ToastUtil.m */,
 			);
-			path = ToastUtil;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		DE83ADBC29DAAA9200874CBB /* JailbreakDetection */ = {
+		DE12328B2A02BEE400F402F4 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				DE83ADAA29DAA9A400874CBB /* JailbreakDetection.h */,
-				DE83ADAB29DAA9A400874CBB /* JailbreakDetection.m */,
+				DE1232982A02C96400F402F4 /* JailbreakDetectionViewModel.swift */,
+				DE12329A2A02C97600F402F4 /* FridaDetectionViewModel.swift */,
+				DE12329E2A02CA0F00F402F4 /* AgentDetectionViewModel.swift */,
+				DE1232A22A02CB6D00F402F4 /* DebugDetectionViewModel.swift */,
+				DE1232A62A02CB9A00F402F4 /* OtherDetectionViewModel.swift */,
+				DE9D1C0C2A039D200066DAEB /* CommonUtils.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DE1232A82A02D0FE00F402F4 /* JailbreakDetection */ = {
+			isa = PBXGroup;
+			children = (
+				DE1232AA2A02D11900F402F4 /* JailbreakDetection.h */,
+				DE1232AB2A02D11900F402F4 /* JailbreakDetection.m */,
 			);
 			path = JailbreakDetection;
 			sourceTree = "<group>";
 		};
-		DE83ADBD29DAAA9B00874CBB /* FridaDetection */ = {
+		DE1232AD2A02D15C00F402F4 /* CommonUtil */ = {
 			isa = PBXGroup;
 			children = (
-				DE83ADAD29DAA9C700874CBB /* FridaDetection.h */,
-				DE83ADAE29DAA9C700874CBB /* FridaDetection.m */,
+				DE1232B12A02D20D00F402F4 /* AppInfo.h */,
+				DE1232B22A02D20D00F402F4 /* AppInfo.m */,
+				DE1232AE2A02D17600F402F4 /* FileAndFolderPathDetection.h */,
+				DE1232AF2A02D17600F402F4 /* FileAndFolderPathDetection.m */,
 			);
-			path = FridaDetection;
+			path = CommonUtil;
 			sourceTree = "<group>";
 		};
-		DE83ADBE29DAAAA400874CBB /* AgentDetection */ = {
+		DE1232B42A02D25400F402F4 /* SystemHeaders */ = {
 			isa = PBXGroup;
 			children = (
-				DE83ADB029DAA9E500874CBB /* AgentDetection.h */,
-				DE83ADB129DAA9E500874CBB /* AgentDetection.m */,
-			);
-			path = AgentDetection;
-			sourceTree = "<group>";
-		};
-		DE83ADBF29DAAAB300874CBB /* DebugDetection */ = {
-			isa = PBXGroup;
-			children = (
-				DE83ADB329DAAA1600874CBB /* DebugDetection.h */,
-				DE83ADB429DAAA1600874CBB /* DebugDetection.m */,
-			);
-			path = DebugDetection;
-			sourceTree = "<group>";
-		};
-		DE83ADC029DAAAC100874CBB /* OtherDetection */ = {
-			isa = PBXGroup;
-			children = (
-				DE83ADB629DAAA3A00874CBB /* DynamicLibraryInjectionDetection.h */,
-				DE83ADB729DAAA3A00874CBB /* DynamicLibraryInjectionDetection.m */,
-				DE83ADB929DAAA5C00874CBB /* OpenSSHDetection.h */,
-				DE83ADBA29DAAA5C00874CBB /* OpenSSHDetection.m */,
-			);
-			path = OtherDetection;
-			sourceTree = "<group>";
-		};
-		DE83ADC229DAAB9E00874CBB /* SystemHeaders */ = {
-			isa = PBXGroup;
-			children = (
-				DE83ADC129DAAB6000874CBB /* ptrace.h */,
-				DE83ADC529DAABE000874CBB /* FBApplicationInfo.h */,
-				DE83ADC629DAABE000874CBB /* FBBundleInfo.h */,
-				DE83ADC429DAABE000874CBB /* LSApplicationProxy.h */,
-				DE83ADC329DAABE000874CBB /* LSApplicationWorkspace.h */,
+				DE1232B92A02D28B00F402F4 /* FBApplicationInfo.h */,
+				DE1232B62A02D28B00F402F4 /* FBBundleInfo.h */,
+				DE1232B82A02D28B00F402F4 /* LSApplicationProxy.h */,
+				DE1232B52A02D28B00F402F4 /* LSApplicationWorkspace.h */,
+				DE1232B72A02D28B00F402F4 /* ptrace.h */,
 			);
 			path = SystemHeaders;
 			sourceTree = "<group>";
 		};
-		DE83ADC729DAACCC00874CBB /* Detection */ = {
+		DE1232BA2A02D46D00F402F4 /* FridaDetection */ = {
 			isa = PBXGroup;
 			children = (
-				DE83AD8629DAA7DE00874CBB /* JailbreakDetectionView.swift */,
-				DE83AD8829DAA7F400874CBB /* JailbreakFileDetectionView.swift */,
-				DE83AD8A29DAA80800874CBB /* PluginApplicationDetectionView.swift */,
-				DE83AD8C29DAA81D00874CBB /* FridaDetectionView.swift */,
-				DE83AD8E29DAA83100874CBB /* FridaFileDetectionView.swift */,
-				DE83AD9029DAA84600874CBB /* AgentDetectionView.swift */,
-				DE83AD9229DAA86100874CBB /* AgentAppDetectionView.swift */,
-				DE83AD9429DAA87A00874CBB /* DebugDetectionView.swift */,
-				DE83AD9629DAA89000874CBB /* OtherDetectionView.swift */,
-				DE83AD9829DAA8A600874CBB /* DynamicLibraryInjectionDetectionView.swift */,
-				DE83AD9A29DAA8BB00874CBB /* OpenSSHDetectionView.swift */,
-				DE83AD9C29DAA8D200874CBB /* OpenSSHFileDetectionView.swift */,
+				DE1232BB2A02D48400F402F4 /* FridaDetection.h */,
+				DE1232BC2A02D48400F402F4 /* FridaDetection.m */,
 			);
-			path = Detection;
+			path = FridaDetection;
+			sourceTree = "<group>";
+		};
+		DE1232BE2A02D4CF00F402F4 /* AgentDetection */ = {
+			isa = PBXGroup;
+			children = (
+				DE1232BF2A02D4DE00F402F4 /* AgentDetection.h */,
+				DE1232C02A02D4DE00F402F4 /* AgentDetection.m */,
+			);
+			path = AgentDetection;
+			sourceTree = "<group>";
+		};
+		DE1232C22A02D53000F402F4 /* DebugDetection */ = {
+			isa = PBXGroup;
+			children = (
+				DE1232C32A02D53A00F402F4 /* DebugDetection.h */,
+				DE1232C42A02D53A00F402F4 /* DebugDetection.m */,
+			);
+			path = DebugDetection;
+			sourceTree = "<group>";
+		};
+		DE1232C62A02D55500F402F4 /* OtherDetection */ = {
+			isa = PBXGroup;
+			children = (
+				DE1232CA2A02D58700F402F4 /* DynamicLibraryInjectionDetection.h */,
+				DE1232CB2A02D58700F402F4 /* DynamicLibraryInjectionDetection.m */,
+				DE1232C72A02D57200F402F4 /* OpenSSHDetection.h */,
+				DE1232C82A02D57200F402F4 /* OpenSSHDetection.m */,
+			);
+			path = OtherDetection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DE83AD7429DAA78000874CBB /* EnvDetection */ = {
+		DE1232772A02BD3800F402F4 /* EnvDetection */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE83AD8329DAA78100874CBB /* Build configuration list for PBXNativeTarget "EnvDetection" */;
+			buildConfigurationList = DE1232862A02BD3A00F402F4 /* Build configuration list for PBXNativeTarget "EnvDetection" */;
 			buildPhases = (
-				DE83AD7129DAA78000874CBB /* Sources */,
-				DE83AD7229DAA78000874CBB /* Frameworks */,
-				DE83AD7329DAA78000874CBB /* Resources */,
+				DE1232742A02BD3800F402F4 /* Sources */,
+				DE1232752A02BD3800F402F4 /* Frameworks */,
+				DE1232762A02BD3800F402F4 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -249,26 +270,26 @@
 			);
 			name = EnvDetection;
 			productName = EnvDetection;
-			productReference = DE83AD7529DAA78000874CBB /* EnvDetection.app */;
+			productReference = DE1232782A02BD3800F402F4 /* EnvDetection.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DE83AD6D29DAA78000874CBB /* Project object */ = {
+		DE1232702A02BD3800F402F4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					DE83AD7429DAA78000874CBB = {
+					DE1232772A02BD3800F402F4 = {
 						CreatedOnToolsVersion = 13.3;
 						LastSwiftMigration = 1330;
 					};
 				};
 			};
-			buildConfigurationList = DE83AD7029DAA78000874CBB /* Build configuration list for PBXProject "EnvDetection" */;
+			buildConfigurationList = DE1232732A02BD3800F402F4 /* Build configuration list for PBXProject "EnvDetection" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -276,63 +297,68 @@
 				en,
 				Base,
 			);
-			mainGroup = DE83AD6C29DAA78000874CBB;
-			productRefGroup = DE83AD7629DAA78000874CBB /* Products */;
+			mainGroup = DE12326F2A02BD3800F402F4;
+			productRefGroup = DE1232792A02BD3800F402F4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DE83AD7429DAA78000874CBB /* EnvDetection */,
+				DE1232772A02BD3800F402F4 /* EnvDetection */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DE83AD7329DAA78000874CBB /* Resources */ = {
+		DE1232762A02BD3800F402F4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE83AD8029DAA78100874CBB /* Preview Assets.xcassets in Resources */,
-				DE83AD7D29DAA78100874CBB /* Assets.xcassets in Resources */,
+				DE1232832A02BD3A00F402F4 /* Preview Assets.xcassets in Resources */,
+				DE1232802A02BD3A00F402F4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DE83AD7129DAA78000874CBB /* Sources */ = {
+		DE1232742A02BD3800F402F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE83AD9929DAA8A600874CBB /* DynamicLibraryInjectionDetectionView.swift in Sources */,
-				DE83ADA429DAA91D00874CBB /* AppInfo.m in Sources */,
-				DE83ADBB29DAAA5C00874CBB /* OpenSSHDetection.m in Sources */,
-				DE83AD8929DAA7F400874CBB /* JailbreakFileDetectionView.swift in Sources */,
-				DE83AD8F29DAA83100874CBB /* FridaFileDetectionView.swift in Sources */,
-				DE83ADAF29DAA9C700874CBB /* FridaDetection.m in Sources */,
-				DE83ADB229DAA9E500874CBB /* AgentDetection.m in Sources */,
-				DE83AD9529DAA87A00874CBB /* DebugDetectionView.swift in Sources */,
-				DE83AD7B29DAA78000874CBB /* EnvDetection.swift in Sources */,
-				DE83AD9D29DAA8D200874CBB /* OpenSSHFileDetectionView.swift in Sources */,
-				DE83AD9729DAA89000874CBB /* OtherDetectionView.swift in Sources */,
-				DE83ADA129DAA8F400874CBB /* ToastUtil.m in Sources */,
-				DE83ADAC29DAA9A400874CBB /* JailbreakDetection.m in Sources */,
-				DE83ADB529DAAA1600874CBB /* DebugDetection.m in Sources */,
-				DE83AD7929DAA78000874CBB /* EnvDetectionApp.swift in Sources */,
-				DE83AD9129DAA84600874CBB /* AgentDetectionView.swift in Sources */,
-				DE83AD9329DAA86100874CBB /* AgentAppDetectionView.swift in Sources */,
-				DE83AD9B29DAA8BB00874CBB /* OpenSSHDetectionView.swift in Sources */,
-				DE83AD8D29DAA81D00874CBB /* FridaDetectionView.swift in Sources */,
-				DE83AD8B29DAA80800874CBB /* PluginApplicationDetectionView.swift in Sources */,
-				DE83ADA729DAA93B00874CBB /* FileAndFolderPathDetection.m in Sources */,
-				DE83AD8729DAA7DE00874CBB /* JailbreakDetectionView.swift in Sources */,
-				DE83ADB829DAAA3A00874CBB /* DynamicLibraryInjectionDetection.m in Sources */,
+				DE1232BD2A02D48400F402F4 /* FridaDetection.m in Sources */,
+				DE1232B32A02D20D00F402F4 /* AppInfo.m in Sources */,
+				DE1232D02A02DB6500F402F4 /* JailbreakFileAndFolderDetectionView.swift in Sources */,
+				DE12327E2A02BD3800F402F4 /* ContentView.swift in Sources */,
+				DE1232A12A02CB6200F402F4 /* DebugDetectionView.swift in Sources */,
+				DE12329B2A02C97600F402F4 /* FridaDetectionViewModel.swift in Sources */,
+				DE1232CC2A02D58700F402F4 /* DynamicLibraryInjectionDetection.m in Sources */,
+				DE1232C92A02D57200F402F4 /* OpenSSHDetection.m in Sources */,
+				DE12329F2A02CA0F00F402F4 /* AgentDetectionViewModel.swift in Sources */,
+				DE1232DA2A02FDC900F402F4 /* OpenSSHDetectionView.swift in Sources */,
+				DE1232D22A02E8FD00F402F4 /* FridaFileDetectionView.swift in Sources */,
+				DE1232C12A02D4DE00F402F4 /* AgentDetection.m in Sources */,
+				DE1232A52A02CB9000F402F4 /* OtherDetectionView.swift in Sources */,
+				DE1232D62A02F80600F402F4 /* DynamicLibraryInjectionDetectionView.swift in Sources */,
+				DE1232D82A02FB5400F402F4 /* PluginApplicationDetectionView.swift in Sources */,
+				DE1232A72A02CB9A00F402F4 /* OtherDetectionViewModel.swift in Sources */,
+				DE1232C52A02D53A00F402F4 /* DebugDetection.m in Sources */,
+				DE1232B02A02D17600F402F4 /* FileAndFolderPathDetection.m in Sources */,
+				DE1232A32A02CB6D00F402F4 /* DebugDetectionViewModel.swift in Sources */,
+				DE12329D2A02CA0100F402F4 /* AgentDetectionView.swift in Sources */,
+				DE12327C2A02BD3800F402F4 /* EnvDetectionApp.swift in Sources */,
+				DE12328D2A02BFE800F402F4 /* JailbreakDetectionView.swift in Sources */,
+				DE1232DC2A02FDD700F402F4 /* OpenSSHFileDetectionView.swift in Sources */,
+				DE1232AC2A02D11900F402F4 /* JailbreakDetection.m in Sources */,
+				DE1232992A02C96400F402F4 /* JailbreakDetectionViewModel.swift in Sources */,
+				DE12328F2A02C52800F402F4 /* FridaDetectionView.swift in Sources */,
+				DE9D1C0D2A039D200066DAEB /* CommonUtils.swift in Sources */,
+				DE1232D42A02EF7B00F402F4 /* AgentApplicationDetectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		DE83AD8129DAA78100874CBB /* Debug */ = {
+		DE1232842A02BD3A00F402F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -392,7 +418,7 @@
 			};
 			name = Debug;
 		};
-		DE83AD8229DAA78100874CBB /* Release */ = {
+		DE1232852A02BD3A00F402F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -446,7 +472,7 @@
 			};
 			name = Release;
 		};
-		DE83AD8429DAA78100874CBB /* Debug */ = {
+		DE1232872A02BD3A00F402F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -478,7 +504,7 @@
 			};
 			name = Debug;
 		};
-		DE83AD8529DAA78100874CBB /* Release */ = {
+		DE1232882A02BD3A00F402F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -512,25 +538,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DE83AD7029DAA78000874CBB /* Build configuration list for PBXProject "EnvDetection" */ = {
+		DE1232732A02BD3800F402F4 /* Build configuration list for PBXProject "EnvDetection" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE83AD8129DAA78100874CBB /* Debug */,
-				DE83AD8229DAA78100874CBB /* Release */,
+				DE1232842A02BD3A00F402F4 /* Debug */,
+				DE1232852A02BD3A00F402F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE83AD8329DAA78100874CBB /* Build configuration list for PBXNativeTarget "EnvDetection" */ = {
+		DE1232862A02BD3A00F402F4 /* Build configuration list for PBXNativeTarget "EnvDetection" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE83AD8429DAA78100874CBB /* Debug */,
-				DE83AD8529DAA78100874CBB /* Release */,
+				DE1232872A02BD3A00F402F4 /* Debug */,
+				DE1232882A02BD3A00F402F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DE83AD6D29DAA78000874CBB /* Project object */;
+	rootObject = DE1232702A02BD3800F402F4 /* Project object */;
 }

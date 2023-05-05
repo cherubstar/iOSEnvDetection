@@ -2,15 +2,14 @@
 //  ContentView.swift
 //  EnvDetection
 //
-//  Created by 小七 on 2023/3/2.
+//  Created by 小七 on 2023/5/4.
 //
 
 import SwiftUI
 
-struct EnvDetection: View {
-
+struct ContentView: View {
     var body: some View {
-        TabView(selection: .constant(1)) {
+        TabView {
             JailbreakDetectionView()
                 .tabItem {
                     Image(systemName: "lock.open").imageScale(.large)
@@ -40,8 +39,8 @@ struct EnvDetection: View {
     }
 }
 
-struct EnvDetection_Previews: PreviewProvider {
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        EnvDetection()
+        ContentView()
     }
 }

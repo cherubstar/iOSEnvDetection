@@ -2,13 +2,12 @@
 //  AppInfo.h
 //  EnvDetection
 //
-//  Created by 小七 on 2023/3/27.
+//  Created by 小七 on 2023/5/4.
 //
 
 #import <Foundation/Foundation.h>
 #import "FBApplicationInfo.h"
 #import "LSApplicationProxy.h"
-
 
 NS_ASSUME_NONNULL_BEGIN
 
